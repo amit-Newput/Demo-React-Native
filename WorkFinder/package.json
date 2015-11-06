@@ -6,6 +6,7 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "apsl-react-native-button": "^2.1.0",
     "react-native": "^0.14.0"
   }
 }
