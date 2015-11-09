@@ -4,7 +4,14 @@ This repository contains an XCode application, WorkFinder, created using React N
 The project was created using the react-native-cli tool:
 
 `react-native init WorkFinder`
+## To run the app
+* Make sure you have installed React Native by following instructions [here](http://facebook.github.io/react-native/docs/getting-started.html#requirements)
+* Run the following command to fetch the node dependencies:
 
-To run this project you need to fetch the node dependencies using the following command:
+```
+npm install
+```
 
-`npm install`
+* Go to WorkFinder directory
+* Open  ios/WorkFinder.xcodeproj in Xcode
+* Hit the Run button

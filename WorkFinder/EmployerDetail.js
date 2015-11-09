@@ -10,39 +10,39 @@ var {
 } = React;
 
 var styles = StyleSheet.create({
-  employerDetail: {
-    flex: 1,
-    flexDirection: 'column',
-    backgroundColor: '#F5FCFF',
-    marginTop:64,
-    padding:5,
-    
+    employerDetail: {
+        flex: 1,
+        flexDirection: 'column',
+        backgroundColor: '#ffffff',
+        marginTop:64,
+        padding:15,
+    },
+    title: {
+        fontWeight: 'bold',
+        fontSize: 16,
+        marginBottom: 8,
+        fontFamily:'Helvetica Neue',
+        color:'#555555'
 
-  },
-   title: {
-   fontWeight: 'bold',
-    fontSize: 20,
-    marginBottom: 8,
-    
-  },
-   detail: {
-    fontSize: 14,
-    marginBottom: 8,
-  },
+    },
+    detail: {
+        fontSize: 14,
+        marginBottom: 8,
+        fontFamily:'Helvetica Neue',
+        color:'#808080'
+    },
 });
 
 var EmployerDetail = React.createClass({
- render: function() {
-	var employer = this.props.employer;
-    	return (
-      		<View style={styles.employerDetail}>
-        			<Text style={styles.title}>{employer.name}</Text>
-          			<Text style={styles.detail}>{employer.description}</Text>
-        	</View>
-        
+    render: function() {
+        var employer = this.props.employer;
+        return (
+            <View style={styles.employerDetail}>
+                <Text style={styles.detail}>{employer.description}</Text>
+            </View>
 
-    );
-  },
+        );
+    },
   
 });
 
